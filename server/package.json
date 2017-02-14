@@ -1,0 +1,29 @@
+{
+  "name": "rememberWords",
+  "version": "1.0.0",
+  "description": "Servicio para recordar significados de las palabras",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "cors": "^2.8.1",
+    "express": "^4.12.3",
+    "helmet": "^3.4.0",
+    "mongodb": "^2.2.20",
+    "sanitizer": "^0.1.3",
+    "serve-favicon": "^2.2.0",
+    "striptags": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+      "start" : "node app.js",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "deploy" : "now -e MONGO_DATABASE=ChnageNameDB -e MONGO_USER=ChangeUserDB -e MONGO_PASSWORD=ChangePasswordDB"
+  },
+  "keywords": [
+    "Recordar palabras",
+    "Traducciones",
+    "Extensión"
+  ],
+  "author": "Jorge Rubiano",
+  "license": "ISC"
+}

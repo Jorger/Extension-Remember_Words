@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Remember Words by @ostjh",
+  "description": "Extensión para recordar palabras",
+  "version": "0.0.0.1",
+  "permissions": ["contextMenus"],
+  "background": {
+    "scripts": [
+      "event.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Remember Words",
+    "default_popup": "popup.html"
+  },
+  "content_scripts":
+  [
+      {
+          "matches": ["*://*/*"],
+          "css": ["sweetalert.css"],
+          "js": ["content.js", "sweetalert.min.js"]
+      }
+  ],
+  "icons" : {"48": "icon48.png"}
+}
