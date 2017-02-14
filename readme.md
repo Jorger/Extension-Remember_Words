@@ -2,6 +2,8 @@
 
 Extensión para Google Chrome, que tiene como objetivo guardar el significado de las palabras, en mi caso particular almacenar la traducción de algunas palabras.
 
+![RW](https://raw.githubusercontent.com/Jorger/Extension-Remember_Words/master/img_examples/ExtensionChrome.gif)
+
 Otra de las razones para desarrollar la extensión, fue con el objetivo de conocer la forma en que es posible realizarlo, entender los diferentes tipos de ambientes donde se ejecuta (background, content_scripts, browser_action) y la forma en que se comunica.
 
 # Servicios utilizado.
