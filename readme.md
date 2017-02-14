@@ -56,6 +56,22 @@ Una vez el backend esté en ejecución se deberá establecer está url la extens
   const URL_SERVICE = "https://CHANGE_URL_DEPLOY.now.sh";
 ```
 
+## Instalar Extensión.
+
+### Instalar sin empaquetar.
+
+Para está instalación deber estar habilitada la opción "Modo de Programador" en chrome://extensions/
+
+
+![RW2](https://raw.githubusercontent.com/Jorger/Extension-Remember_Words/master/img_examples/extensionDirectorio.gif)
+
+### Instalar extensión empaqueta
+
+En https://developer.chrome.com/extensions/packaging se muestra la forma de emaquetar un extensión, la forma de asociarla se muestra en el siguiente imágen.
+
+![RW3](https://raw.githubusercontent.com/Jorger/Extension-Remember_Words/master/img_examples/installExtension.gif)
+
+
 Jorge Rubiano
 
 [@ostjh]
