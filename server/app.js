@@ -27,6 +27,20 @@ const express 			= 	require("express"),
 		});
 	};
 
+	app.get("/all", (req, res) => {
+		let word = striptags(sanitizer.escape(req.params.word));
+		db.coleccion("words").find({}, {limit : 20, sort : ['word', 'asc']}).toArray((err, words) => {
+			res.json({words, error : words.length === 0 });
+		});
+	});
+
+	app.get("/searchword/:word", (req, res) => {
+		let word = striptags(sanitizer.escape(req.params.word));
+		db.coleccion("words").find({'word': {'$regex': word.toLowerCase()}}, {limit : 5}).toArray((err, words) => {
+			res.json({words, error : words.length === 0 });
+		});
+	});
+	
 	//Servicios extensión...
 	app.get("/word/:word", (req, res) => {
 		let word = striptags(sanitizer.escape(req.params.word));
